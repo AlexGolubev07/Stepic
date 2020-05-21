@@ -2,9 +2,15 @@
 
 using namespace std;
 
+struct Node
+{};
+
 int main()
 {
-	int const & n = 1;
-	cout << n;
+	Child child;
+	Parent* parent[1];
+	parent[0] = &child;
+	parent[0]->method();
+
 	return 0;
 }
